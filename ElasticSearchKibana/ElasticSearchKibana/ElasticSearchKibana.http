@@ -1,0 +1,6 @@
+@ElasticSearchKibana_HostAddress = http://localhost:5001
+
+GET {{ElasticSearchKibana_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
