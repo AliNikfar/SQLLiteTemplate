@@ -20,7 +20,7 @@ namespace DigitalLibrary.Controllers
         {
             await _db.Books.AddAsync(book);
             await _db.SaveChangesAsync();
-            return Ok(_db.Books.AsNoTracking().ToListAsync());
+            return Ok(_db.Books.AsNoTracking().ToListAsync()); 
         }
         [HttpGet]
         public async Task<ActionResult<List<Book>>> GetAllBooks()
